@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#photographer {
+  width: 100%;
+  height: auto;
+  max-width: 1500px;
+  max-height: 600px;
+  aspect-ratio: 2.5 / 1;
+  background-image: url(images/photographer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.title_photographer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 50%);
+  font-size: 1rem;
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  height: 60px;
+  transform: translateX(-50%); /* ✅ center it horizontally */
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  border-radius: 5px;
+}
+
+.list li {
+  list-style-type: none;
+  padding: 12px 0;
+  width: 80px;
+}
+
+.list a {
+  text-decoration: none;
+  color: #000000;
+  padding: 12px 15px;
+  border-radius: 5px;
+}
+
+.list a:hover {
+  background-color: lightgray;
+}
+
+/* images */
+
+.div_images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.my_image {
+  width: 99%;
+  height: auto;
+  padding: 1px 20px 20px;
+  max-width: 1000px;
+  max-height: 500px;
+}
+.my_image:nth-child(1) {
+  padding-top: 30px;
+}
+
+.div_contact {
+  background-color: rgba(211, 211, 211, 0.432);
+  text-align: center;
+  width: 94%;
+  height: auto;
+  max-width: 960px;
+  max-height: 960px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact h2 {
+  padding: 30px;
+  font-weight: 100;
+  font-size: 2rem;
+}
+.contact p {
+  text-align: left;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+.contact form {
+  text-align: left;
+  padding: 20px;
+}
+.contact form input {
+  text-align: left;
+  margin-bottom: 20px;
+  width: calc(100% - 10px);
+  height: 50px;
+  border: 1px solid rgb(204, 203, 203);
+  font-size: 1.3rem;
+}
+
+.contact form label {
+  font-size: 1.3rem;
+}
+
+#button_submit {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  width: calc(100% - 10px);
+}
+
+#button_submit:hover {
+  background-color: lightgray;
+  color: #000000;
+}
+
+.contact a {
+  color: black;
+}
